@@ -38,7 +38,7 @@ function App() {
           type="number" pattern="[0-9]"
           placeholder="Digite seu CEP"
           value={input}
-          onChange={(e) => setInput(e.target.value.slice(0, 10))}
+          onChange={handleInputChange}
           maxLength={10}
         />
 
